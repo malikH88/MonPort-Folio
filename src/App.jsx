@@ -1,9 +1,10 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route, } from "react-router-dom";
 import NavBar from './Components/NavBar';
 import Home from './Components/Home';
-import ArticleProjets from './Components/ArticleProjets';
+import Tabs from './Components/Tabs';
 import MonCV from './Components/MonCV';
-import { BrowserRouter as Router, Switch, Route, } from "react-router-dom";
+
 import './App.css';
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
         </div>
         <Switch>
           <Route path="/Projets">
-            <ArticleProjets />
+            <Tabs />
           </Route>
           <Route path="/MonCV">
             <MonCV />

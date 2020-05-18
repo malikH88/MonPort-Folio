@@ -1,3 +1,13 @@
 .Container_Nav{
-    margin-bottom: 1.5rem;
+}
+
+a{
+    font-size: 1.2rem;
+}
+
+.Container_Ul{
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+    list-style-type: none;
 }
