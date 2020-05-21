@@ -2,8 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route, } from "react-router-dom";
 import NavBar from './Components/NavBar';
 import Home from './Components/Home';
-import Tabs from './Components/Tabs';
+import ApiProject from './Components/ApiProject';
 import MonCV from './Components/MonCV';
+import Contact from './Components/Contact';
 
 import './App.css';
 
@@ -15,14 +16,17 @@ function App() {
           <NavBar />
         </div>
         <Switch>
+        <Route path="/Contact">
+            <Contact/>
+          </Route>
           <Route path="/Projets">
-            <Tabs />
+            <ApiProject/>
           </Route>
           <Route path="/MonCV">
-            <MonCV />
+            <MonCV/>
           </Route>
           <Route exact path="/">
-            <Home />
+            <Home/>
           </Route>
         </Switch>
       </Router>

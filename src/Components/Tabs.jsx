@@ -1,16 +1,15 @@
 import React, { useState } from 'react';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
-import ArticleProjets from './ArticleProjets';
+import '../Css/Tabs.css';
 
-function Tabs() {
+const Tabs = (props) => {
 
 	const [activeTab, setActiveTab] = useState('1');
-
-  const toggle = tab => {
-    if(activeTab !== tab) setActiveTab(tab);
+	const toggle = tab => {
+		if (activeTab !== tab) setActiveTab(tab);
 	}
-	
+
 	return (
 		<div>
 			<Nav tabs>
@@ -28,27 +27,27 @@ function Tabs() {
 				<TabPane tabId="1">
 					<Row>
 						<Col sm="12">
-							<h4>Wild Book</h4>
-							<ArticleProjets/>
+							<h3>{props.ProjectApi.WildBook.title}</h3>
+							<p>{props.ProjectApi.WildBook.Resume}</p>
 						</Col>
 					</Row>
 				</TabPane>
 				<TabPane tabId="2">
-          <Row>
-            <Col sm="12">
-							<h4>Hackathon</h4>
-							<ArticleProjets/>
-            </Col>
-          </Row>
-        </TabPane>
+					<Row>
+						<Col sm="12">
+							<h3>{props.ProjectApi.Hackathon.title}</h3>
+							<p>{props.ProjectApi.Hackathon.Resume}</p>
+						</Col>
+					</Row>
+				</TabPane>
 				<TabPane tabId="3">
-          <Row>
-            <Col sm="12">
-							<h4>Cocktail Paradise</h4>
-							<ArticleProjets/>
-            </Col>
-          </Row>
-        </TabPane>
+					<Row>
+						<Col sm="12">
+							<h3>{props.ProjectApi.CocktailParadise.title}</h3>
+							<p>{props.ProjectApi.CocktailParadise.Resume}</p>
+						</Col>
+					</Row>
+				</TabPane>
 			</TabContent>
 		</div>
 	)
