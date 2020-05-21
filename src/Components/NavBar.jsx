@@ -18,13 +18,10 @@ const NavBar = (props) => {
         <Collapse isOpen={!collapsed} navbar>
           <div className='Container_Ul'>
             <NavItem>
-              <Link to="/">Home</Link>
-            </NavItem>
-            <NavItem>
               <Link to="/Projets">Projets</Link>
             </NavItem>
             <NavItem>
-              <Link to="/MonCV">MonCV</Link>
+              <Link to="/Curriculum_Vitae">Curriculum Vitae</Link>
             </NavItem>
             <NavItem>
               <Link to="/Contact">Contact</Link>

@@ -22,7 +22,7 @@ function App() {
           <Route path="/Projets">
             <ApiProject/>
           </Route>
-          <Route path="/MonCV">
+          <Route path="/Curriculum_Vitae">
             <MonCV/>
           </Route>
           <Route exact path="/">

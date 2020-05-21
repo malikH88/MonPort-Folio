@@ -4,6 +4,12 @@ h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+.Margin_Project{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
 .Container_Project{
     display: flex;
     flex-direction: column;

@@ -12,7 +12,7 @@ const Tabs = (props) => {
 
 	return (
 		<div>
-      <h1>PROJECT</h1>
+			<h1>PROJECT</h1>
 			<Nav tabs>
 				<NavItem>
 					<NavLink className={classnames({ active: activeTab === '1' })} onClick={() => { toggle('1'); }}>Wild Book</NavLink>
@@ -26,46 +26,46 @@ const Tabs = (props) => {
 			</Nav>
 			<TabContent activeTab={activeTab}>
 				<TabPane tabId="1">
-					<Row>
+					<div className='Margin_Project'>
 						<Col sm="12">
-              <div className='Container_Project'>
-                <div className='Container_title'>
-                  <h3 className='H3_title'>{props.ProjectApi.WildBook.title}</h3>
-                </div>
-                <div className='Container_Resume'>
-                  <p>{props.ProjectApi.WildBook.Resume}</p>
-                </div>
-              </div>
+							<div className='Container_Project'>
+								<div className='Container_title'>
+									<h3 className='H3_title'>{props.ProjectApi.WildBook.title}</h3>
+								</div>
+								<div className='Container_Resume'>
+									<p>{props.ProjectApi.WildBook.Resume}</p>
+								</div>
+							</div>
 						</Col>
-					</Row>
+					</div>
 				</TabPane>
 				<TabPane tabId="2">
-					<Row>
+					<div className='Margin_Project'>
 						<Col sm="12">
-            <div className='Container_Project'>
-                <div className='Container_title'>
-                  <h3 className='H3_title'>{props.ProjectApi.Hackathon.title}</h3>
-                </div>
-                <div className='Container_Resume'>
-                  <p>{props.ProjectApi.Hackathon.Resume}</p>
-                </div>
-              </div>
+							<div className='Container_Project'>
+								<div className='Container_title'>
+									<h3 className='H3_title'>{props.ProjectApi.Hackathon.title}</h3>
+								</div>
+								<div className='Container_Resume'>
+									<p>{props.ProjectApi.Hackathon.Resume}</p>
+								</div>
+							</div>
 						</Col>
-					</Row>
+					</div>
 				</TabPane>
 				<TabPane tabId="3">
-					<Row>
+					<div className='Margin_Project'>
 						<Col sm="12">
-            <div className='Container_Project'>
-                <div className='Container_title'>
-                  <h3 className='H3_title'>{props.ProjectApi.CocktailParadise.title}</h3>
-                </div>
-                <div className='Container_Resume'>
-                  <p>{props.ProjectApi.CocktailParadise.Resume}</p>
-                </div>
-              </div>
+							<div className='Container_Project'>
+								<div className='Container_title'>
+									<h3 className='H3_title'>{props.ProjectApi.CocktailParadise.title}</h3>
+								</div>
+								<div className='Container_Resume'>
+									<p>{props.ProjectApi.CocktailParadise.Resume}</p>
+								</div>
+							</div>
 						</Col>
-					</Row>
+					</div>
 				</TabPane>
 			</TabContent>
 		</div>

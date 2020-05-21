@@ -1,4 +1,6 @@
-
+.test{
+    animation-delay: 2s;
+}
 .Background_Home{
     background-color: violet;
 }
