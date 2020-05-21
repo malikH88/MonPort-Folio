@@ -1,6 +1,16 @@
 import React, { useState } from 'react';
-import '../Css/Home.css';
 import { Jumbotron, Button, Collapse, Card, CardBody } from 'reactstrap';
+import SplitText from 'react-pose-text';
+import '../Css/Home.css';
+
+const charPoses = {
+  exit: { opacity: 0, y: 20 },
+  enter: {
+    opacity: 1,
+    y: 0,
+    delay: ({ charIndex }) => charIndex * 10
+  }
+};
 
 function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,12 +18,16 @@ function Home() {
   return (
     <div>
       <Jumbotron>
-        <h1 className="display-3">Hello, world!</h1>
-        <p className="lead">This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.</p>
+        <h1 className="title">React Development</h1>
+        <div className="Text_Animation">
+          <SplitText initialPose="exit" pose="enter" charPoses={charPoses} >
+          Motivé et rigoureux, je souhaite effectuer un stage dans le secteur du développement web et suis disponible à partir du 3 août 2020 pour une durée de 4 mois. Je suis mobile pour le secteur Luxembourg, Champagne Ardenne.
+          </SplitText>
+        </div>
         <hr className="my-2" />
         <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
         <div>
-          <Button color="primary" onClick={toggle} style={{ marginBottom: '1rem' }}>Toggle</Button>
+          <Button color="primary" onClick={toggle} style={{ marginBottom: '1rem' }}>More</Button>
           <Collapse isOpen={isOpen}>
             <Card>
               <CardBody>

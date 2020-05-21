@@ -12,6 +12,7 @@ const Tabs = (props) => {
 
 	return (
 		<div>
+      <h1>PROJECT</h1>
 			<Nav tabs>
 				<NavItem>
 					<NavLink className={classnames({ active: activeTab === '1' })} onClick={() => { toggle('1'); }}>Wild Book</NavLink>
@@ -27,24 +28,42 @@ const Tabs = (props) => {
 				<TabPane tabId="1">
 					<Row>
 						<Col sm="12">
-							<h3>{props.ProjectApi.WildBook.title}</h3>
-							<p>{props.ProjectApi.WildBook.Resume}</p>
+              <div className='Container_Project'>
+                <div className='Container_title'>
+                  <h3 className='H3_title'>{props.ProjectApi.WildBook.title}</h3>
+                </div>
+                <div className='Container_Resume'>
+                  <p>{props.ProjectApi.WildBook.Resume}</p>
+                </div>
+              </div>
 						</Col>
 					</Row>
 				</TabPane>
 				<TabPane tabId="2">
 					<Row>
 						<Col sm="12">
-							<h3>{props.ProjectApi.Hackathon.title}</h3>
-							<p>{props.ProjectApi.Hackathon.Resume}</p>
+            <div className='Container_Project'>
+                <div className='Container_title'>
+                  <h3 className='H3_title'>{props.ProjectApi.Hackathon.title}</h3>
+                </div>
+                <div className='Container_Resume'>
+                  <p>{props.ProjectApi.Hackathon.Resume}</p>
+                </div>
+              </div>
 						</Col>
 					</Row>
 				</TabPane>
 				<TabPane tabId="3">
 					<Row>
 						<Col sm="12">
-							<h3>{props.ProjectApi.CocktailParadise.title}</h3>
-							<p>{props.ProjectApi.CocktailParadise.Resume}</p>
+            <div className='Container_Project'>
+                <div className='Container_title'>
+                  <h3 className='H3_title'>{props.ProjectApi.CocktailParadise.title}</h3>
+                </div>
+                <div className='Container_Resume'>
+                  <p>{props.ProjectApi.CocktailParadise.Resume}</p>
+                </div>
+              </div>
 						</Col>
 					</Row>
 				</TabPane>

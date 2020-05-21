@@ -1,3 +1,24 @@
-p{
+h1{
+    padding: 2rem;
+    color: rgb(57, 136, 226);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.Container_Project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.H3_title{
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.Container_Resume{
+    width: 90vw;
     text-align: center;
 }

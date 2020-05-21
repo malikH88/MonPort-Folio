@@ -1,13 +1,19 @@
-.Container_Nav{
+.Burger_Menu{
+    margin-right: 10rem;
 }
 
-a{
-    font-size: 1.2rem;
+.Navbar_Title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(57, 136, 226);
+    margin: 0;
+    padding: 0;
 }
 
 .Container_Ul{
-    display: flex;
-    flex-direction: column;
-    justify-self: start;
     list-style-type: none;
 }
+
+a{
+    font-size: 1rem;
+}
+
