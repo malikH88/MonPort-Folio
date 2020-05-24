@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col } from 'reactstrap';
+import { TabContent, TabPane, Nav, NavItem, NavLink, Col } from 'reactstrap';
 import classnames from 'classnames';
 import '../Css/Tabs.css';
 
@@ -12,7 +12,7 @@ const Tabs = (props) => {
 
 	return (
 		<div>
-			<h1>PROJECT</h1>
+			<h1>Project</h1>
 			<Nav tabs>
 				<NavItem>
 					<NavLink className={classnames({ active: activeTab === '1' })} onClick={() => { toggle('1'); }}>Wild Book</NavLink>
@@ -33,7 +33,13 @@ const Tabs = (props) => {
 									<h3 className='H3_title'>{props.ProjectApi.WildBook.title}</h3>
 								</div>
 								<div className='Container_Resume'>
-									<p>{props.ProjectApi.WildBook.Resume}</p>
+									<p className='Resume'>{props.ProjectApi.WildBook.resume}</p>
+								</div>
+								<div className='Container_Image'>
+									{props.ProjectApi.WildBook.image}
+								</div>
+								<div>
+									<p>{props.ProjectApi.WildBook.link}</p>
 								</div>
 							</div>
 						</Col>
@@ -47,7 +53,13 @@ const Tabs = (props) => {
 									<h3 className='H3_title'>{props.ProjectApi.Hackathon.title}</h3>
 								</div>
 								<div className='Container_Resume'>
-									<p>{props.ProjectApi.Hackathon.Resume}</p>
+									<p>{props.ProjectApi.Hackathon.resume}</p>
+								</div>
+								<div className='Container_Image'>
+									{props.ProjectApi.Hackathon.image}
+								</div>
+								<div>
+									<p>{props.ProjectApi.Hackathon.link}</p>
 								</div>
 							</div>
 						</Col>
@@ -61,7 +73,13 @@ const Tabs = (props) => {
 									<h3 className='H3_title'>{props.ProjectApi.CocktailParadise.title}</h3>
 								</div>
 								<div className='Container_Resume'>
-									<p>{props.ProjectApi.CocktailParadise.Resume}</p>
+									<p>{props.ProjectApi.CocktailParadise.resume}</p>
+								</div>
+								<div className='Container_Image'>
+									{props.ProjectApi.CocktailParadise.image}
+								</div>
+								<div>
+									<p>{props.ProjectApi.CocktailParadise.link}</p>
 								</div>
 							</div>
 						</Col>

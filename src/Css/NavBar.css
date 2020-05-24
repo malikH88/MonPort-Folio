@@ -4,16 +4,21 @@
 
 .Navbar_Title{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(57, 136, 226);
+    color: #00d8ff;
     margin: 0;
     padding: 0;
 }
 
 .Container_Ul{
     list-style-type: none;
+    color: #00d8ff;
 }
 
 a{
     font-size: 1rem;
 }
 
+.my-styles{
+    margin: 0;
+    padding: 0;
+}

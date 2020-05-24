@@ -4,6 +4,29 @@ import SplitText from 'react-pose-text';
 import QueueAnim from 'rc-queue-anim';
 import '../Css/Home.css';
 
+const wordPoses = {
+  draggable: true
+};
+
+const charPoses2 = {
+  drag: {
+    y: 0,
+    transition: ({ charInWordIndex }) => ({
+      type: 'spring',
+      velocity: 100 * Math.sin(1 + charInWordIndex),
+      damping: 0
+    })
+  },
+  dragEnd: {
+    y: 0,
+    transition: {
+      type: 'spring',
+      damping: 10,
+      stiffness: 1000
+    }
+  }
+};
+
 const charPoses = {
   exit: { opacity: 0, y: 20 },
   enter: {
@@ -18,14 +41,25 @@ function Home() {
   const toggle = () => setIsOpen(!isOpen);
   return (
     <div>
+      <div className='title'>
+        <SplitText wordPoses={wordPoses} charPoses={charPoses2}>
+          BIENVENUE
+        </SplitText>
+      </div>
       <Jumbotron>
         <QueueAnim>
-          <div key="1">
-            <h1 className="title">React Development</h1>
+          <div class="container">
+            <span class="react-logo">
+              <span class="nucleo"></span>
+            </span>
           </div>
           <div key="2" className="Text_Animation">
-            <SplitText className='rest' initialPose="exit" pose="enter" charPoses={charPoses} >
-              Motivé et rigoureux, je souhaite effectuer un stage dans le secteur du développement web et suis disponible à partir du 3 août 2020 pour une durée de 4 mois. Je suis mobile pour le secteur Luxembourg, Champagne Ardenne.
+            <SplitText initialPose="exit" pose="enter" charPoses={charPoses} >
+              Je m'appelle
+              Malik Himeur
+              je suis devellopeur react
+              full stack
+              passionnée et sensible à l'UX Design.
           </SplitText>
           </div>
           <div key="3">

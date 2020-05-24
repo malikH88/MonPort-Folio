@@ -5,7 +5,6 @@ import Home from './Components/Home';
 import ApiProject from './Components/ApiProject';
 import MonCV from './Components/MonCV';
 import Contact from './Components/Contact';
-
 import './App.css';
 
 function App() {
