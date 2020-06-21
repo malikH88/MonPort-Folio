@@ -1,39 +1,21 @@
-import React from 'react';
+import React from "react";
 import Home from '../ProjectsHome/ProjectsHome';
 import Web from '../ProjectWeb/ApiProjectWeb';
 import Game from '../ProjectsGame/ProjectsGame';
-import { useLocation } from 'react-router-dom';
-
-
-function useQuery() {
-  return new URLSearchParams(useLocation().search);
-}
+import SwipeableRoutes from "react-swipeable-routes";
+import { Route } from "react-router-dom";
 
 function ProjectsRouter() {
-  let query = useQuery();
-  let step = parseInt(query.get("step"));
-  if (isNaN(step)) {
-    step = 1;
-  }
+  return (
+    <section>
+      <SwipeableRoutes>
+        <Route path="/Projets?step=1" component={Home} />
+        <Route path="/Projets?step=2" component={Web} />
+        <Route path="/Projets?step=3" component={Game} />
+      </SwipeableRoutes>
+    </section>
 
-  switch (step) {
-    case 1:
-      return (
-        <Home />
-      );
-    case 2:
-      return (
-        <Web />
-      );
-    case 3:
-      return (
-        <Game />
-      );
-    default:
-      return (
-        <div><h1>problem</h1></div>
-      );
-  }
+  );
 }
 
 export default ProjectsRouter;
