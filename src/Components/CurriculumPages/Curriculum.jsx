@@ -1,6 +1,6 @@
 import React from 'react';
-import malik from '../Files/Annotation.png';
-import '../Css/MonCV.css';
+import malik from '../../Files/Annotation.png';
+import './Curriculum.css';
 
 function MonCV() {
   return (

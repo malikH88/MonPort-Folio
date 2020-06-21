@@ -1,8 +1,8 @@
 import React from 'react';
-import Tabs from './Tabs';
-import Paradise from '../Files/image/Paradise.png';
-import ARW from '../Files/image/Around_The_World.png';
-import Book from '../Files/image/Wild_book.png';
+import Tabs from './TabProjectWeb';
+import Paradise from '../../../Files/image/Paradise.png';
+import ARW from '../../../Files/image/Around_The_World.png';
+import Book from '../../../Files/image/Wild_book.png';
 
 class ApiProject extends React.Component {
   constructor(props) {

@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Jumbotron, Button, Collapse, Card, CardBody } from 'reactstrap';
 import SplitText from 'react-pose-text';
 import QueueAnim from 'rc-queue-anim';
-import '../Css/Home.css';
-import Wild_Picture from '../Files/image/WildCodeSchool.png';
+import './Home.css';
+import Wild_Picture from '../../Files/image/WildCodeSchool.png';
 
 const wordPoses = {
   draggable: true

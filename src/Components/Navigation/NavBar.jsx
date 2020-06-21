@@ -3,7 +3,7 @@ import { Collapse, Navbar, NavbarToggler, NavbarBrand, NavItem } from 'reactstra
 import SplitText from 'react-pose-text';
 
 import { Link } from "react-router-dom";
-import '../Css/NavBar.css';
+import './NavBar.css';
 
 const wordPoses = {
   draggable: true

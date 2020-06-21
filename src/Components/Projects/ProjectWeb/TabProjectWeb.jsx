@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Col } from 'reactstrap';
 import classnames from 'classnames';
-import '../Css/Tabs.css';
+import './Tabs.css';
 
 const Tabs = (props) => {
 
@@ -12,7 +12,7 @@ const Tabs = (props) => {
 
 	return (
 		<div>
-			<h1>Project</h1>
+			<h1>Project Web</h1>
 			<Nav tabs>
 				<NavItem>
 					<NavLink className={classnames({ active: activeTab === '1' })} onClick={() => { toggle('1'); }}>Wild Book</NavLink>
