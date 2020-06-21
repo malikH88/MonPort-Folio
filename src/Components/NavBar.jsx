@@ -41,7 +41,7 @@ const NavBar = () => {
             PORT-FOLIO
           </div>
         </NavbarBrand>
-        <NavbarToggler onClick={toggleNavbar} className="Burger_Menu" />
+        <NavbarToggler onClick={toggleNavbar}/>
         <Collapse isOpen={!collapsed} navbar>
           <div className='Container_Ul'>
             <NavItem>
