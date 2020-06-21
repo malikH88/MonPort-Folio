@@ -14,7 +14,7 @@ const charPoses = {
     y: 0,
     transition: ({ charInWordIndex }) => ({
       type: 'spring',
-      velocity: 75 * Math.sin(1 + charInWordIndex),
+      velocity: 100 * Math.sin(1 + charInWordIndex),
       damping: 10
     })
   },
@@ -23,12 +23,12 @@ const charPoses = {
     transition: {
       type: 'spring',
       damping: 1,
-      stiffness: 1
+      stiffness: 1000
     }
   }
 };
 
-const NavBar = (props) => {
+const NavBar = () => {
   const [collapsed, setCollapsed] = useState(true);
 
   const toggleNavbar = () => setCollapsed(!collapsed);
@@ -39,21 +39,37 @@ const NavBar = (props) => {
         <NavbarToggler onClick={toggleNavbar} className="Burger_Menu" />
         <NavbarBrand href="/" className="mr-auto">
           <div className="Navbar_Title">
-            <SplitText wordPoses={wordPoses} charPoses={charPoses}>
-              PORT-FOLIO
-            </SplitText>
+            PORT-FOLIO
           </div>
         </NavbarBrand>
         <Collapse isOpen={!collapsed} navbar>
           <div className='Container_Ul'>
             <NavItem>
-              <Link to="/Projets">PROJECT</Link>
+              <Link to="/Projets">
+                <p className="Link_Navigation">
+                  <SplitText wordPoses={wordPoses} charPoses={charPoses}>
+                    Project
+                  </SplitText>
+                </p>
+              </Link>
             </NavItem>
             <NavItem>
-              <Link to="/Curriculum_Vitae">CV</Link>
+              <Link to="/Curriculum_Vitae">
+                <p className="Link_Navigation">
+                  <SplitText wordPoses={wordPoses} charPoses={charPoses}>
+                    Curriculum Vitae
+                  </SplitText>
+                </p>
+              </Link>
             </NavItem>
             <NavItem>
-              <Link to="/Contact">CONTACT</Link>
+              <Link to="/Contact">
+                <p className="Link_Navigation">
+                  <SplitText wordPoses={wordPoses} charPoses={charPoses}>
+                    Contact
+                  </SplitText>
+                </p>
+              </Link>
             </NavItem>
           </div>
         </Collapse>

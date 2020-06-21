@@ -3,6 +3,7 @@ import { Jumbotron, Button, Collapse, Card, CardBody } from 'reactstrap';
 import SplitText from 'react-pose-text';
 import QueueAnim from 'rc-queue-anim';
 import '../Css/Home.css';
+import Wild_Picture from '../Files/image/WildCodeSchool.png';
 
 const wordPoses = {
   draggable: true
@@ -40,7 +41,7 @@ function Home() {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
   return (
-    <div>
+    <div className='Background_Home'>
       <div className='title'>
         <SplitText wordPoses={wordPoses} charPoses={charPoses2}>
           BIENVENUE
@@ -64,16 +65,16 @@ function Home() {
           </div>
           <div key="3">
             <hr className="my-2" />
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <p>Je suis actuellement en formation a la wild Code School de Reims pour plus d'information cliqué ci-dessous.</p>
             <div>
               <Button color="primary" onClick={toggle} style={{ marginBottom: '1rem' }}>More</Button>
               <Collapse isOpen={isOpen}>
                 <Card>
                   <CardBody>
-                    Anim pariatur cliche reprehenderit,
-                    enim eiusmod high life accusamus terry richardson ad squid. Nihil
-                    anim keffiyeh helvetica, craft beer labore wes anderson cred
-                    nesciunt sapiente ea proident.
+                    <div>
+                      <h1>Wild Code School</h1>
+                      <img src={Wild_Picture} alt=""/>
+                    </div>
               </CardBody>
                 </Card>
               </Collapse>

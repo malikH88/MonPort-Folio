@@ -1,8 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600;700&display=swap');
+
+.Background_Home{
+    height: 100vh;
+    background: linear-gradient(#00d8ff, #9198e5);
+}
+
+.jumbotron{
+    background-color: white!important;
+    border-radius: 0!important;
+}
+
+.card-body{
+    background-color: #cecece;
+}
+
 .title{
     padding: 2rem;
-    text-align: center;
     font-size: 2.3rem;
-    color: #00d8ff;
+    color: #ffffff;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -11,9 +26,10 @@
 }
 
 .Text_Animation {
-    padding: 0.8rem;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 1rem;
     text-align: center;
-    font-size: 1.25rem;
-    font-weight: 300;
+    font-size: 1.5rem;
+    font-weight: 600;
     color: rgb(54, 54, 54);
 }
