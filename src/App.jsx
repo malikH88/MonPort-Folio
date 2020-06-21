@@ -2,7 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route, } from "react-router-dom";
 import NavBar from './Components/Navigation/NavBar';
 import Home from './Components/HomePages/Home';
-import ApiProject from './Components/Projects/ProjectWeb/ApiProjectWeb';
+import ProjectRoute from './Components/Projects/Router/NavProject';
+// import ProjectWeb from './Components/Projects/ProjectWeb/ApiProjectWeb';
 import MonCV from './Components/CurriculumPages/Curriculum';
 import Contact from './Components/ContactPages/Contact';
 import './App.css';
@@ -19,7 +20,7 @@ function App() {
             <Contact/>
           </Route>
           <Route path="/Projets">
-            <ApiProject/>
+            <ProjectRoute/>
           </Route>
           <Route path="/Curriculum_Vitae">
             <MonCV/>

@@ -46,11 +46,7 @@ const NavBar = () => {
           <div className='Container_Ul'>
             <NavItem>
               <Link to="/Projets">
-                <p className="Link_Navigation">
-                  <SplitText wordPoses={wordPoses} charPoses={charPoses}>
-                    Project
-                  </SplitText>
-                </p>
+                <p className="Link_Navigation">Project WEB</p>
               </Link>
             </NavItem>
             <NavItem>
