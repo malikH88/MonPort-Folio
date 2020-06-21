@@ -1,35 +1,35 @@
-h1{
+h1 {
     padding: 2rem;
     color: #00d8ff;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.Margin_Project{
+.Margin_Project {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
 }
 
-.Container_Project{
+.Container_Project {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.H3_title{
+.H3_title {
     text-align: center;
     font-size: 1.2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
-.Container_Resume{
+.Container_Resume {
     width: 90vw;
     text-align: center;
 }
 
-.Container_Image{
+.Container_Image {
     display: flex;
     justify-content: center;
     align-items: center;
