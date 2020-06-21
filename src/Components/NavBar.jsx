@@ -36,12 +36,12 @@ const NavBar = () => {
   return (
     <div className="Container_Nav">
       <Navbar color="faded" light>
-        <NavbarToggler onClick={toggleNavbar} className="Burger_Menu" />
         <NavbarBrand href="/" className="mr-auto">
           <div className="Navbar_Title">
             PORT-FOLIO
           </div>
         </NavbarBrand>
+        <NavbarToggler onClick={toggleNavbar} className="Burger_Menu" />
         <Collapse isOpen={!collapsed} navbar>
           <div className='Container_Ul'>
             <NavItem>

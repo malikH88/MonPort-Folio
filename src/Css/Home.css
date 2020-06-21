@@ -1,28 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600;700&display=swap');
-
-.Background_Home{
+.Background_Home {
     height: 100vh;
     background: linear-gradient(#00d8ff, #9198e5);
 }
 
-.jumbotron{
+.title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 2rem;
+    font-size: 2.8rem;
+    color: #ffffff;
+    text-align: end;
+}
+
+.jumbotron {
+    /* border-top: solid 1px black;
+    border-bottom: solid 1px black; */
     background-color: white!important;
     border-radius: 0!important;
-}
-
-.card-body{
-    background-color: #cecece;
-}
-
-.title{
-    padding: 2rem;
-    font-size: 2.3rem;
-    color: #ffffff;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.Container_Home_Text {
-    width: 80vw;
 }
 
 .Text_Animation {
@@ -32,4 +26,55 @@
     font-size: 1.5rem;
     font-weight: 600;
     color: rgb(54, 54, 54);
+}
+
+.Explain_Present {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 1000;
+    text-align: center;
+}
+
+.card-body {
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
+
+.card {
+    border: 0!important;
+}
+
+.Container_More {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.More_Title {
+    margin: 0;
+    padding: 0;
+    color: #f76c6c;
+}
+
+.More_Img {
+    margin: 1rem;
+    width: 100%;
+}
+
+.More_Text {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: start;
+    line-height: 1.2rem;
+    font-weight: 600;
+    color: #f76c6c;
+}
+
+strong {
+    color: #da6060;
+}
+
+.Container_Home_Text {
+    width: 80vw;
 }

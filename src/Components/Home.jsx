@@ -65,17 +65,20 @@ function Home() {
           </div>
           <div key="3">
             <hr className="my-2" />
-            <p>Je suis actuellement en formation a la wild Code School de Reims pour plus d'information cliqué ci-dessous.</p>
+            <div className="Explain_Present">
+              <p>Je suis actuellement en formation a la wild Code School de Reims pour plus d'information cliqué ci-dessous.</p>
+            </div>
             <div>
-              <Button color="primary" onClick={toggle} style={{ marginBottom: '1rem' }}>More</Button>
+              <Button color="primary" onClick={toggle} style={{ marginBottom: '1rem' }}>Voir Plus</Button>
               <Collapse isOpen={isOpen}>
                 <Card>
                   <CardBody>
-                    <div>
-                      <h1>Wild Code School</h1>
-                      <img src={Wild_Picture} alt=""/>
+                    <div className='Container_More'>
+                      <h1 className='More_Title'>Wild Code School</h1>
+                      <img className='More_Img' src={Wild_Picture} alt="" />
+                      <p className='More_Text'>La <strong>Wild Code School</strong> est une école innovante et un réseau européen de campus qui forment aux métiers tech des spécialistes adaptables. C'est une marque de la société <strong>Innov'Educ</strong>. Après s'être historiquement développée sur le métier de développeur web <strong>(PHP, Javascript,Java/Android)</strong>, l'école propose aujourd'hui des formations autour de six grands domaines: le développement informatique, la data, la cybersécurité, le product management, l'<strong>UX/UI</strong> Design et le business développement 2.0. Elle forme essentiellement des adultes en reconversion professionnelle sur des formats courts de trois à cinq mois.</p>
                     </div>
-              </CardBody>
+                  </CardBody>
                 </Card>
               </Collapse>
             </div>
