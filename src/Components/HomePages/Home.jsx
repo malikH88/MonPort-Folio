@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 import { Jumbotron, Button, Collapse, Card, CardBody } from 'reactstrap';
 import SplitText from 'react-pose-text';
 import QueueAnim from 'rc-queue-anim';
+
 import './Home.css';
+
 import Wild_Picture from '../../Files/image/WildCodeSchool.png';
+import Avatar from '../../Files/image/avataaars.svg'
 
 const wordPoses = {
   draggable: true
@@ -53,6 +56,9 @@ function Home() {
             <span class="react-logo">
               <span class="nucleo"></span>
             </span>
+          </div>
+          <div className='Ctn_Avatar'>
+            <img className="Avatar" src={Avatar} alt="Avatar"/>
           </div>
           <div key="2" className="Text_Animation">
             <SplitText initialPose="exit" pose="enter" charPoses={charPoses} >

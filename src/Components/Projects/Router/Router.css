@@ -19,7 +19,7 @@
   border-radius: 50%;
 }
 
-.button:focus {
+.button:active {
   background-color: #00d8ff;
   border: none;
 }

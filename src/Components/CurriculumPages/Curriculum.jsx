@@ -6,7 +6,7 @@ function MonCV() {
   return (
     <div className="Cv_Page">
       <h1>Curriculum Vitae</h1>
-      <img src={malik} alt="malik"/>
+      <img className="page_cv" src={malik} alt="malik"/>
     </div>
   )
 }
