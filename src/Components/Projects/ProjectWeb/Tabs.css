@@ -17,6 +17,10 @@ h1 {
     align-items: center;
 }
 
+.Preview_Project{
+    max-width: 100%;
+}
+
 .H3_title {
     text-align: center;
     font-size: 1.2rem;

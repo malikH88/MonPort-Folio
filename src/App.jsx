@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Switch, Route, } from "react-router-dom";
 import NavBar from './Components/Navigation/NavBar';
 import Home from './Components/HomePages/Home';
 import ProjectRoute from './Components/Projects/Router/NavProject';
-// import ProjectWeb from './Components/Projects/ProjectWeb/ApiProjectWeb';
 import MonCV from './Components/CurriculumPages/Curriculum';
 import Contact from './Components/ContactPages/Contact';
 import './App.css';
@@ -16,17 +15,17 @@ function App() {
           <NavBar />
         </div>
         <Switch>
-        <Route path="/Contact">
-            <Contact/>
+          <Route path="/Contact">
+            <Contact />
           </Route>
           <Route path="/Projets">
-            <ProjectRoute/>
+            <ProjectRoute />
           </Route>
           <Route path="/Curriculum_Vitae">
-            <MonCV/>
+            <MonCV />
           </Route>
           <Route exact path="/">
-            <Home/>
+            <Home />
           </Route>
         </Switch>
       </Router>

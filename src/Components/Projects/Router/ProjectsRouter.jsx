@@ -7,14 +7,11 @@ import { Route } from "react-router-dom";
 
 function ProjectsRouter() {
   return (
-    <section>
       <SwipeableRoutes>
         <Route path="/Projets?step=1" component={Home} />
         <Route path="/Projets?step=2" component={Web} />
         <Route path="/Projets?step=3" component={Game} />
       </SwipeableRoutes>
-    </section>
-
   );
 }
 

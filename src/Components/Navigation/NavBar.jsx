@@ -1,32 +1,7 @@
 import React, { useState } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, NavItem } from 'reactstrap';
-import SplitText from 'react-pose-text';
-
 import { Link } from "react-router-dom";
 import './NavBar.css';
-
-const wordPoses = {
-  draggable: true
-};
-
-const charPoses = {
-  drag: {
-    y: 0,
-    transition: ({ charInWordIndex }) => ({
-      type: 'spring',
-      velocity: 100 * Math.sin(1 + charInWordIndex),
-      damping: 10
-    })
-  },
-  dragEnd: {
-    y: 0,
-    transition: {
-      type: 'spring',
-      damping: 1,
-      stiffness: 1000
-    }
-  }
-};
 
 const NavBar = () => {
   const [collapsed, setCollapsed] = useState(true);
@@ -41,7 +16,7 @@ const NavBar = () => {
             PORT-FOLIO
           </div>
         </NavbarBrand>
-        <NavbarToggler onClick={toggleNavbar}/>
+        <NavbarToggler onClick={toggleNavbar} />
         <Collapse isOpen={!collapsed} navbar>
           <div className='Container_Ul'>
             <NavItem>
@@ -52,18 +27,14 @@ const NavBar = () => {
             <NavItem>
               <Link to="/Curriculum_Vitae">
                 <p className="Link_Navigation">
-                  <SplitText wordPoses={wordPoses} charPoses={charPoses}>
-                    Curriculum Vitae
-                  </SplitText>
+                  Curriculum Vitae
                 </p>
               </Link>
             </NavItem>
             <NavItem>
               <Link to="/Contact">
                 <p className="Link_Navigation">
-                  <SplitText wordPoses={wordPoses} charPoses={charPoses}>
-                    Contact
-                  </SplitText>
+                  Contact
                 </p>
               </Link>
             </NavItem>
