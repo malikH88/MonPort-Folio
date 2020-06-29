@@ -1,19 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 .Background_Home {
     background: linear-gradient(#00d8ff, #9198e5);
 }
 
 .title {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding: 2rem;
-    font-size: 2.8rem;
-    color: #ffffff;
+    background-image: url(../../Files/image/Wall.png);
+    font-family: 'Lobster', cursive;
+    padding: 1rem;
+    font-size: 4rem;
+    color: rgb(54, 54, 54 , 0.6);
     text-align: end;
 }
 
 .jumbotron {
     background-image: url(https://i.pinimg.com/originals/62/63/5b/62635bfd6f5c20e3666f27e015191bde.jpg);
-    /* background-color: white!important; */
     border-radius: 0!important;
 }
 
@@ -25,6 +27,7 @@
 .Avatar {
     width: 60%;
     margin: 0rem 1rem 2rem 1rem;
+
 }
 
 .Text_Animation {
