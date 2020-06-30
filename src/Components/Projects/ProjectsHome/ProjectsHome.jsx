@@ -1,28 +1,34 @@
 import React from 'react';
-import { fadeInDown } from 'react-animations';
-import Radium, { StyleRoot } from 'radium';
+import { Animated } from "react-animated-css";
+import SplitText from 'react-pose-text';
 import './ProjectsHome.css';
 
-const styles = {
-  fadeInDown: {
-    animation: 'x 1s',
-    animationName: Radium.keyframes(fadeInDown, 'fadeInDown')
-  }
-}
+const charPoses = {
+  exit: { opacity: 0, y: 20 },
+  enter: {
+    opacity: 1,
+    y: 0,
+    delay: ({ charIndex }) => charIndex * 50,
+  },
+};
 
 const ProjectsHome = () => {
   return (
-    <div>
-      <StyleRoot>
-        <div className='Background_Home_Project' style={styles.fadeInDown}>
-          <h1 className='Home_Project_Title'>Welcome to my Project</h1>
-          <div>
-            <p className='Intro_Project'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto labore aliquam placeat distinctio quidem ex eos qui dolorum, quos in voluptatibus officia voluptate rem excepturi quis! Quae tempore in possimus.</p>
-          </div>
+    <Animated animationIn="fadeInDown" animationInDuration="1300" isVisible={true}>
+      <div className='Background_Home_Project' >
+        <h1 className='Home_Project_Title'>Welcome to my Project</h1>
+        <div className='Ctn_Intro_Project'>
+          <SplitText initialPose="exit" pose="enter" charPoses={charPoses} className='Intro_Project'>
+            Je m'appelle Malik Himeur je suis devellopeur react full stack passionnée et sensible à l'UX Design.
+            </SplitText>
         </div>
-      </StyleRoot>
-    </div>
-
+        <div className='Line_animation'>
+        </div>
+        <div>
+          <Animated animationIn="fadeInDown" animationOut="fadeOutUp" animationInDelay="6000" animationOutDelay="1000" isVisible={true}><h1>Malik</h1></Animated>
+        </div>
+      </div>
+    </Animated>
   );
 }
 

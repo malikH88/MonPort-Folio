@@ -9,10 +9,54 @@
   color: white;
 }
 
+.Ctn_Intro_Project {
+  text-align: center;
+  margin-bottom: 4rem;
+  animation-delay: 5s;
+}
+
 .Intro_Project {
+  text-align: center;
   color: white;
   text-align: center;
   line-height: 1.5rem;
   font-size: 1.5rem;
-  padding: 1rem;
+}
+
+.Line_animation{
+  margin: auto;
+  height: 2px;
+  width: 85vw;
+  background-color: white;
+  transform-origin: left;
+  transform: scaleX(0);
+  animation: animate 6s forwards;
+  animation-delay: 5s;
+}
+
+@keyframes animate {
+  0%{
+    transform: translate(0) scaleX(0);
+    transform-origin: left;
+    left: 33.33%;
+    right: auto;
+  }
+  15%{
+    transform: translate(0) scaleX(1);
+    transform-origin: left;
+    left: 33.33%;
+    right: auto;
+  }
+  85%{
+    transform: translate(0) scaleX(1);
+    transform-origin: right;
+    left: auto;
+    right: 33.33%;
+  }
+  100%{
+    transform: translate(0) scaleX(0);
+    transform-origin: right;
+    left: auto;
+    right: 33.33%;
+  }
 }
