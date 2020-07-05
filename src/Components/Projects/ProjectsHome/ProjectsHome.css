@@ -11,8 +11,8 @@
 
 .Ctn_Intro_Project {
   text-align: center;
-  margin-bottom: 4rem;
-  animation-delay: 5s;
+  margin-bottom: 3rem;
+  padding: 1rem;
 }
 
 .Intro_Project {
@@ -23,40 +23,103 @@
   font-size: 1.5rem;
 }
 
-.Line_animation{
+.Line_animation {
   margin: auto;
+  margin-bottom: 2rem;
   height: 2px;
   width: 85vw;
   background-color: white;
   transform-origin: left;
   transform: scaleX(0);
   animation: animate 6s forwards;
-  animation-delay: 5s;
+  animation-delay: 6s;
 }
 
 @keyframes animate {
-  0%{
+  0% {
     transform: translate(0) scaleX(0);
     transform-origin: left;
     left: 33.33%;
     right: auto;
   }
-  15%{
+  15% {
     transform: translate(0) scaleX(1);
     transform-origin: left;
     left: 33.33%;
     right: auto;
   }
-  85%{
+  85% {
     transform: translate(0) scaleX(1);
     transform-origin: right;
     left: auto;
     right: 33.33%;
   }
+  100% {
+    transform: translate(0) scaleX(0);
+    transform-origin: right;
+    left: auto;
+    right: 33.33%;
+  }
+}
+
+.container{
+  width:250px;
+  height:250px;
+  margin:20px auto 0 auto;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.react-logo{
+  display: inline-block;
+  border-radius:50%;
+  border:10px solid #00d8ff;
+
+  animation-name:rotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+}
+
+.react-logo , .react-logo:before , .react-logo:after{
+  position:absolute;
+  display: inline-block;
+  width:200px;
+  height:70px;
+  border-radius:50%;
+  border:10px solid #00d8ff;
+}
+
+.nucleo , .react-logo , .react-logo:before , .react-logo:after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nucleo{
+  width:40px;
+  height:40px;
+  border-radius:100%;
+  background:#00d8ff;
+}
+
+.react-logo:before , .react-logo:after{
+  content:"";
+}
+
+.react-logo:after{
+  transform:rotate(-57deg);
+}
+
+.react-logo:before{
+  transform:rotate(57deg);
+}
+
+@keyframes rotate{
+
   100%{
-    transform: translate(0) scaleX(0);
-    transform-origin: right;
-    left: auto;
-    right: 33.33%;
+    transform:rotate(360deg);
   }
 }

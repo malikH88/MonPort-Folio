@@ -12,7 +12,7 @@ const Tabs = (props) => {
 
 	return (
 		<div className='Background_Web'>
-			<h1 className='h1'>Project Web</h1>
+			<h1 className='Title_Web'>Project Web</h1>
 			<Nav tabs>
 				<NavItem>
 					<NavLink className={classnames({ active: activeTab === '1' })} onClick={() => { toggle('1'); }}>Wild Book</NavLink>

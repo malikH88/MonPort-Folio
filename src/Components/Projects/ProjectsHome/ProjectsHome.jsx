@@ -19,14 +19,18 @@ const ProjectsHome = () => {
         <h1 className='Home_Project_Title'>Welcome to my Project</h1>
         <div className='Ctn_Intro_Project'>
           <SplitText initialPose="exit" pose="enter" charPoses={charPoses} className='Intro_Project'>
-            Je m'appelle Malik Himeur je suis devellopeur react full stack passionnée et sensible à l'UX Design.
-            </SplitText>
+            Welcome to my projet page. Here, you can find my different projet as Web, Game and my creation illustration or cover, logo, ect...
+          </SplitText>
         </div>
         <div className='Line_animation'>
         </div>
-        <div>
-          <Animated animationIn="fadeInDown" animationOut="fadeOutUp" animationInDelay="6000" animationOutDelay="1000" isVisible={true}><h1>Malik</h1></Animated>
-        </div>
+        <Animated animationIn="fadeInDown" animationOut="fadeOutUp" animationInDelay="7000" animationOutDelay="1000" isVisible={true}>
+          <div class="container">
+            <span class="react-logo">
+              <span class="nucleo"></span>
+            </span>
+          </div>
+        </Animated>
       </div>
     </Animated>
   );
