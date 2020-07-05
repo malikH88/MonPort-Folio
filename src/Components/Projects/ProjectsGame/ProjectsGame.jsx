@@ -3,7 +3,7 @@ import './ProjectsGame.css'
 
 const ProjectsGame = () => {
   return (
-    <div>
+    <div className='Bg_Game'>
       <h1 className='Game_Title'>Game Project</h1>
     </div>
   );

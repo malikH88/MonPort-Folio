@@ -2,15 +2,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 .Background_Web {
+    background-image: url(../../../Files/image/Wall.jpg);
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    height: 85vh;
 }
 
 .Title_Web {
+    font-family: 'Lobster', sans-serif;
+    color: rgb(82, 82, 82);
     text-align: center;
     padding: 2rem;
-    color: #00d8ff;
-    font-weight: 1000;
+    font-size: 3rem;
+}
+
+/* a.active.nav-link {
+    background-color: rgba(255, 255, 255, 0.89)!important;
+    font-family: 'Poppins', sans-serif!important;
+    color: #00d8ff!important;
+} */
+
+.tab {
+    background-color: white;
 }
 
 .Margin_Project {
@@ -33,13 +46,16 @@
 .H3_title {
     text-align: center;
     font-size: 1.2rem;
+    font-weight: 1000;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    color: rgb(82, 82, 82);
 }
 
 .Container_Resume {
     width: 90vw;
     text-align: center;
+    color: rgb(82, 82, 82);
 }
 
 .Container_Image {

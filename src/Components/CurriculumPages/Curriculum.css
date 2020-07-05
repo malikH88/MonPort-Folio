@@ -5,6 +5,14 @@
     align-items: center;
 }
 
+.Cv_Title {
+    font-family: 'Lobster', sans-serif;
+    color: #00d8ff;
+    text-align: center;
+    padding: 2rem;
+    font-size: 3rem;
+}
+
 .page_cv {
     width: 90%;
     height: auto;

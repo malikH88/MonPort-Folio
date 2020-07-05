@@ -16,7 +16,7 @@ const ProjectsHome = () => {
   return (
     <Animated animationIn="fadeInDown" animationInDuration="1300" isVisible={true}>
       <div className='Background_Home_Project' >
-        <h1 className='Home_Project_Title'>Welcome to my Project</h1>
+        <h1 className='Home_Project_Title'>Project Home</h1>
         <div className='Ctn_Intro_Project'>
           <SplitText initialPose="exit" pose="enter" charPoses={charPoses} className='Intro_Project'>
             Welcome to my projet page. Here, you can find my different projet as Web, Game and my creation illustration or cover, logo, ect...
