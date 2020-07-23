@@ -6,7 +6,7 @@ import axios from 'axios';
 import { connect } from 'react-redux';
 import { changeToken } from '../../redux/tokenReducer';
 
-import './admin.css';
+import './Admin.css';
 
 const LoginAdminContainer = ({ dispatch }) => {
   const [username, setUsername] = useState('');

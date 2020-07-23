@@ -1,10 +1,10 @@
 import React from "react";
-import './admin.css';
+import './Admin.css';
 
 const NeedLog = () => {
   return (
     <div className="NotFoundContent">
-      Erreur de connexion
+      Besoin d'une connexion Administrateur
     </div>
   );
 };

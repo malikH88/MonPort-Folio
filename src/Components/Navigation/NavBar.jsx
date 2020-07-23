@@ -22,19 +22,19 @@ const NavBar = () => {
         <Collapse isOpen={!collapsed} navbar>
           <div className='Container_Ul'>
             <NavItem>
-              <Link to="/Projets">
+              <Link to="/projets">
                 <p className="Link_Navigation">Project WEB</p>
               </Link>
             </NavItem>
             <NavItem>
-              <Link to="/Curriculum_Vitae">
+              <Link to="/curriculumVitae">
                 <p className="Link_Navigation">
                   Curriculum Vitae
                 </p>
               </Link>
             </NavItem>
             <NavItem>
-              <Link to="/Contact">
+              <Link to="/contact">
                 <p className="Link_Navigation">
                   Contact
                 </p>

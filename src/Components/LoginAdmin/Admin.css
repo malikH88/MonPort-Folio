@@ -1,9 +1,6 @@
-.NotFoundContent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    font-size: 2.5rem;
+.HomeLogo {
+    padding: 2vh;
+    z-index: 2;
 }
 
 .FormContent {
@@ -35,7 +32,10 @@
     border: #03dac5 !important;
 }
 
-.HomeLogo {
-    padding: 2vh;
-    z-index: 2;
+.NotFoundContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    font-size: 2.5rem;
 }

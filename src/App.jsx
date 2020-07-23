@@ -8,8 +8,8 @@ import Home from './Components/HomePages/Home';
 import ProjectRoute from './Components/Projects/Router/NavProject';
 import MonCV from './Components/CurriculumPages/Curriculum';
 import Contact from './Components/ContactPages/Contact';
-import Login from './Components/Admin/login';
-import NeedLog from './Components/Admin/NeedLog';
+import Login from './Components/LoginAdmin/login';
+import NeedLog from './Components/LoginAdmin/NeedLog';
 
 import './App.css';
 
@@ -28,10 +28,10 @@ class App extends React.Component {
         </div>
         <Switch>
           <Route path="/admin" component={Login} />
-          <Route path="/Contact" component={withAuth(Contact)} />
-          <Route path="/Projets" component={ProjectRoute} />
+          <Route path="/contact" component={withAuth(Contact)} />
+          <Route path="/projets" component={ProjectRoute} />
           <Route path="/error" component={NeedLog} />
-          <Route path="/Curriculum_Vitae" component={MonCV} />
+          <Route path="/curriculumVitae" component={MonCV} />
           <Route exact path="/" component={Home} />
         </Switch>
       </Router>
