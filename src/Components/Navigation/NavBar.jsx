@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, NavItem } from 'reactstrap';
 import { Link } from "react-router-dom";
+
+import DeepLink from '../LoginAdmin/DeepLInk'
+
 import './NavBar.css';
 
 const NavBar = () => {
@@ -39,6 +42,9 @@ const NavBar = () => {
                   Contact
                 </p>
               </Link>
+            </NavItem>
+            <NavItem>
+              <DeepLink/>
             </NavItem>
           </div>
         </Collapse>

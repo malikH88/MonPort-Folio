@@ -8,8 +8,13 @@ import Home from './Components/HomePages/Home';
 import ProjectRoute from './Components/Projects/Router/NavProject';
 import MonCV from './Components/CurriculumPages/Curriculum';
 import Contact from './Components/ContactPages/Contact';
+
 import Login from './Components/LoginAdmin/login';
 import NeedLog from './Components/LoginAdmin/NeedLog';
+import Dashboard from'./Components/Dashboard/Dashboard';
+
+import FormAdd from './Components/ProjectsMod/AddProject/FormAdd';
+import Remove from './Components/ProjectsMod/RemoveProject/Remove';
 
 import './App.css';
 
@@ -28,8 +33,11 @@ class App extends React.Component {
         </div>
         <Switch>
           <Route path="/admin" component={Login} />
-          <Route path="/contact" component={withAuth(Contact)} />
+          <Route path="/contact" component={Contact} />
           <Route path="/projets" component={ProjectRoute} />
+          <Route path="/dashboard" component={withAuth(Dashboard)} />
+          <Route path="/create" component={withAuth(FormAdd)} />
+          <Route path="/remove" component={withAuth(Remove)} />
           <Route path="/error" component={NeedLog} />
           <Route path="/curriculumVitae" component={MonCV} />
           <Route exact path="/" component={Home} />

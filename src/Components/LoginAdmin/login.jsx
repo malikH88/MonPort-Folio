@@ -6,7 +6,7 @@ import axios from 'axios';
 import { connect } from 'react-redux';
 import { changeToken } from '../../redux/tokenReducer';
 
-import './Admin.css';
+import './Login.css';
 
 const LoginAdminContainer = ({ dispatch }) => {
   const [username, setUsername] = useState('');
@@ -46,42 +46,42 @@ const LoginAdminContainer = ({ dispatch }) => {
 
   return (
     <>
-        <div className="HomeLogo">
-            <Link to="/" >
-                <img src="https://user-images.githubusercontent.com/57908921/88237718-206b3b00-cc80-11ea-9032-4bc5e7add012.png" alt="Home" />
-            </Link>
-        </div>
-        <div className="FormEmployee FormContent">
+      <div className="HomeLogo">
+        <Link to="/" >
+          <img src="https://user-images.githubusercontent.com/57908921/88237718-206b3b00-cc80-11ea-9032-4bc5e7add012.png" alt="Home" />
+        </Link>
+      </div>
+      <div className="FormEmployee FormContent">
         <form onSubmit={submitForm}>
-            <div className="form-data DivInput">
+          <div className="form-data DivInput">
             <label htmlFor="username" className="LabelForm">Nom d'utilisateur</label>
             <Input
-                type="text"
-                id="username"
-                name="username"
-                onChange={onChangeUsername}
-                value={username}
-                required
+              type="text"
+              id="username"
+              name="username"
+              onChange={onChangeUsername}
+              value={username}
+              required
             />
-            </div>
-            <div className="form-data DivInput">
+          </div>
+          <div className="form-data DivInput">
             <label htmlFor="password" className="LabelForm">Mot de passe</label>
             <Input
-                type="password"
-                id="password"
-                name="password"
-                onChange={onChangePassword}
-                value={password}
-                required
+              type="password"
+              id="password"
+              name="password"
+              onChange={onChangePassword}
+              value={password}
+              required
             />
-            </div>
-            <div className="form-data BtnLoginDiv">
-                <Button type="submit" className="BtnLogin">
-                    Connexion
+          </div>
+          <div className="form-data BtnLoginDiv">
+            <Button type="submit" className="BtnLogin">
+              Connexion
                 </Button>
-            </div>
+          </div>
         </form>
-        </div>
+      </div>
     </>
   );
 };

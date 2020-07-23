@@ -60,11 +60,11 @@ function Home() {
         </div>
         <div key="2" className="Text_Animation">
           <SplitText initialPose="exit" pose="enter" charPoses={charPoses} >
-            Je m'appelle
+            Hi, my name is
             Malik Himeur
-            je suis devellopeur react
+            I am a react developer
             full stack
-            passionnée et sensible à l'UX Design.
+            passionate and sensitive to UX Design.
           </SplitText>
         </div>
         <hr className="my-2" />
@@ -77,10 +77,10 @@ function Home() {
         <div key="3">
           <hr className="my-2" />
           <div className="Explain_Present">
-            <p>Je suis actuellement en formation a la wild Code School de Reims pour plus d'information cliqué ci-dessous.</p>
+            <p>I am currently in training at the wild Code School of Reims for more information clicked below.</p>
           </div>
           <div>
-            <Button color="primary" onClick={toggle} style={{ marginBottom: '1rem' }}>Voir Plus</Button>
+            <Button color="primary" onClick={toggle} style={{ marginBottom: '1rem' }}>See more</Button>
             <Collapse isOpen={isOpen}>
               <Card>
                 <CardBody>
