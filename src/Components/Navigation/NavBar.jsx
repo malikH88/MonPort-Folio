@@ -11,11 +11,13 @@ const NavBar = () => {
   return (
     <div className="Container_Nav">
       <Navbar color="faded" light>
-        <NavbarBrand href="/" className="mr-auto">
-          <div className="Navbar_Title">
-            PORT-FOLIO
+        <Link to="/">
+          <NavbarBrand className="mr-auto">
+            <div className="Navbar_Title">
+              PORT-FOLIO
           </div>
-        </NavbarBrand>
+          </NavbarBrand>
+        </Link>
         <NavbarToggler onClick={toggleNavbar} />
         <Collapse isOpen={!collapsed} navbar>
           <div className='Container_Ul'>
