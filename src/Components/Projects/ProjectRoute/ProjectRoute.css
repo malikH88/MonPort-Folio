@@ -1,11 +1,9 @@
-.Full_Page_Project{
-  height: 92vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.Button_Nav_Projects{
+.Pagination {
+  background-color: white;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -19,7 +17,7 @@
   border-radius: 50%;
 }
 
-.button:active {
+.button:focus {
   background-color: #00d8ff;
   border: none;
 }

@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 
 import NavBar from './Components/Navigation/NavBar';
 import Home from './Components/HomePages/Home';
-import ProjectRoute from './Components/Projects/Router/NavProject';
+import SwipableProject from './Components/Projects/ProjectRoute/SwipableProject';
 import MonCV from './Components/CurriculumPages/Curriculum';
 import Contact from './Components/ContactPages/Contact';
 
@@ -34,7 +34,7 @@ class App extends React.Component {
         <Switch>
           <Route path="/admin" component={Login} />
           <Route path="/contact" component={Contact} />
-          <Route path="/projets" component={ProjectRoute} />
+          <Route path="/project/home" component={SwipableProject} />
           <Route path="/dashboard" component={withAuth(Dashboard)} />
           <Route path="/create" component={withAuth(FormAdd)} />
           <Route path="/remove" component={withAuth(Remove)} />

@@ -24,9 +24,9 @@ const Tabs = (props) => {
 				<NavItem>
 					<NavLink className={classnames({ active: activeTab === '3' })} onClick={() => { toggle('3'); }}>Paradise</NavLink>
 				</NavItem>
-				<NavItem>
+				{/* <NavItem>
 					<NavLink className={classnames({ active: activeTab === '4' })} onClick={() => { toggle('4'); }}>Paradise</NavLink>
-				</NavItem>
+				</NavItem> */}
 			</Nav>
 			<TabContent activeTab={activeTab} className='tab'>
 				<TabPane tabId="1">
