@@ -78,7 +78,7 @@ const LoginAdminContainer = ({ dispatch }) => {
           <div className="form-data BtnLoginDiv">
             <Button type="submit" className="BtnLogin">
               Connexion
-                </Button>
+            </Button>
           </div>
         </form>
       </div>

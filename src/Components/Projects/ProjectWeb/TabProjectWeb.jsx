@@ -3,6 +3,7 @@ import { TabContent, TabPane, Nav, NavItem, NavLink, Col } from 'reactstrap';
 import classnames from 'classnames';
 import './Tabs.css';
 
+import AxiosProject from './AxiosProject';
 const Tabs = (props) => {
 
 	const [activeTab, setActiveTab] = useState('1');
@@ -22,6 +23,9 @@ const Tabs = (props) => {
 				</NavItem>
 				<NavItem>
 					<NavLink className={classnames({ active: activeTab === '3' })} onClick={() => { toggle('3'); }}>Paradise</NavLink>
+				</NavItem>
+				<NavItem>
+					<NavLink className={classnames({ active: activeTab === '4' })} onClick={() => { toggle('4'); }}>Paradise</NavLink>
 				</NavItem>
 			</Nav>
 			<TabContent activeTab={activeTab} className='tab'>
@@ -85,6 +89,7 @@ const Tabs = (props) => {
 						</Col>
 					</div>
 				</TabPane>
+				<AxiosProject />
 			</TabContent>
 		</div>
 	)

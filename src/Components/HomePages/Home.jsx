@@ -5,7 +5,6 @@ import { faReact, faCss3Alt, faHtml5, faNodeJs } from "@fortawesome/free-brands-
 import SplitText from 'react-pose-text';
 import QueueAnim from 'rc-queue-anim';
 
-
 import './Home.css';
 
 import Wild_Picture from '../../Files/image/WildCodeSchool.png';

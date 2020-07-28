@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.Form_add {
+  font-family: 'Poppins', sans-serif;
+  background-image: url(../../../Files/image/Wall.jpg);
+  height: 100vh;
+}
+
+.form {
+  padding: 2rem;
+}
+
+.text_formAdd {
+  color: black;
+  font-weight: 600;
+}
