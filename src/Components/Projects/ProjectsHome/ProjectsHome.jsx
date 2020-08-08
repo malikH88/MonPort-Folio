@@ -26,9 +26,9 @@ const ProjectsHome = () => {
         </div>
         <Animated animationIn="fadeInDown" animationOut="fadeOutUp" animationInDelay="7000" animationOutDelay="1000" isVisible={true}>
           <div class="container">
-            <span class="react-logo">
+            {/* <span class="react-logo">
               <span class="nucleo"></span>
-            </span>
+            </span> */}
           </div>
         </Animated>
       </div>

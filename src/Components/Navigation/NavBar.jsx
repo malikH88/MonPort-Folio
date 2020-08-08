@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, NavItem } from 'reactstrap';
+import { HamburgerElastic } from 'react-animated-burgers';
 import { Link } from "react-router-dom";
 
 import DeepLink from '../LoginAdmin/DeepLInk'
@@ -8,8 +9,10 @@ import './NavBar.css';
 
 const NavBar = () => {
   const [collapsed, setCollapsed] = useState(true);
-
   const toggleNavbar = () => setCollapsed(!collapsed);
+
+  const [isActive, setIsActive] = useState(false);
+  const toggleBurger = () => setIsActive(!isActive);
 
   return (
     <Navbar color="faded" light>
@@ -20,7 +23,11 @@ const NavBar = () => {
           </div>
         </NavbarBrand>
       </Link>
-      <NavbarToggler onClick={toggleNavbar} />
+      <HamburgerElastic
+        // onClick={toggleBurger}
+        onClick={toggleNavbar}
+      />
+      {/* <NavbarToggler onClick={toggleNavbar} /> */}
       <Collapse isOpen={!collapsed} navbar>
         <div className='Container_Ul'>
           <NavItem>
